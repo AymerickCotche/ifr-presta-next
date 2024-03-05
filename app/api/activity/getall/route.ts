@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server'
 
 import prisma from "@/libs/prisma"
 
-export const maxDuration = 300
+export const maxDuration = 10
 export const revalidate = 0
 
 export async function GET(){
