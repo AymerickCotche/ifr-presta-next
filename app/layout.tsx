@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import StoreProvider from "@/redux/provider"
+import Header from "./components/Header";
+
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -12,9 +15,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr">
-       <body className={`flex flex-col gap-8`}>
+    <html lang="fr" className="h-full">
+       <body className="relative h-full flex flex-col">
         <StoreProvider>
+          <Header/>
           {children}
         </StoreProvider>
       </body>

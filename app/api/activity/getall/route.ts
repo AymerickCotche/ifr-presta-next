@@ -1,8 +1,6 @@
 import { NextResponse } from 'next/server'
-import { getServerSession } from "next-auth/next"
 
 import prisma from "@/libs/prisma"
-import { authOptions } from "@/libs/auth"
 
 export const maxDuration = 300
 export const revalidate = 0
@@ -10,14 +8,10 @@ export const revalidate = 0
 export async function GET(){
 
   try {
-
-    const users = await prisma.prestaUser.findMany({
-      where: {
-        isAdmin: false,
-        isValidate: true,
-      },
+      
+    const users = await prisma.prestaActivity.findMany({
       orderBy: {
-        createdAt: "desc"
+        name: "asc"
       }
     })
 
