@@ -178,6 +178,7 @@ model PrestaUser {
   isAdmin    Boolean @default(false)
   activity PrestaActivity?  @relation(fields: [activityId], references: [id])
   activityId String?
+  isValidate Boolean @default(false)
   createdAt         DateTime   @default(now()) @map(name: "created_at")
   updatedAt         DateTime   @updatedAt @map(name: "updated_at")
 }
