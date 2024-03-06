@@ -6,8 +6,11 @@ import facebooklogo from '@/public/facebook.png'
 import xlogo from '@/public/xlogo.png'
 import instagramlogo from '@/public/instagram.png'
 import Link from 'next/link'
+import ButtonRegisterForm from './ButtonRegisterForm'
 
 function Header() {
+
+  const toggleOpenRegisterForm = () => {}
   return (
     <div className='sticky top-0 bg-black flex items-center  justify-between p-4 text-white shadow-2xl '>
       <div>
@@ -43,6 +46,9 @@ function Header() {
             >
               DOMAINES D&apos;ACTIVITE
             </Link>
+          </li>
+          <li>
+            <ButtonRegisterForm/>
           </li>
         </ul>
       </nav>

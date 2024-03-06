@@ -47,7 +47,7 @@ export const {
 } = activity.actions
 
 export const getActivities = createAsyncThunk(
-  'presta/getActivities',
+  'activity/getActivities',
   async () => {
     const response = await fetch(`/api/activity/getall`)
     const results =  await response.json()

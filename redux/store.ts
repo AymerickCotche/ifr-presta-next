@@ -1,12 +1,14 @@
 import { configureStore } from "@reduxjs/toolkit"
 import prestaReducer from './features/prestaSlice'
 import activityReducer from './features/activitySlice'
+import displayReducer from './features/displaySlice'
 
 export const makeStore = () => {
   return configureStore({
     reducer: {
       presta: prestaReducer,
-      activity: activityReducer
+      activity: activityReducer,
+      display: displayReducer
     },
     devTools: process.env.NODE_ENV !== "production",
   })

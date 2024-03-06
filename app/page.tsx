@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { Montserrat } from 'next/font/google'
 import Activities from "./components/Activities";
+import ModalHandler from "./components/ModalHandler";
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 
@@ -12,6 +13,8 @@ export default function Home() {
 
         <Activities/>
       </div>
+
+      <ModalHandler/>
     </main>
   );
 }
