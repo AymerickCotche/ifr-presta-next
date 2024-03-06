@@ -32,7 +32,7 @@ function RegisterForm() {
 
   return (
 
-    <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex justify-center items-center">
+    <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex justify-center items-center z-20">
       
       <form action='submit' className='bg-white p-6 rounded border shadow-lg w-1/2 flex flex-col gap-2'>
         <div className=' text-right'>

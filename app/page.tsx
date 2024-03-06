@@ -2,6 +2,7 @@ import Image from "next/image"
 import { Montserrat } from 'next/font/google'
 import Activities from "./components/Activities";
 import ModalHandler from "./components/ModalHandler";
+import RegisterForm from "./components/RegisterForm";
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 
